@@ -11,16 +11,56 @@ class Book
     // The fields.
     private String author;
     private String title;
+    private int pages;
 
     /**
      * Set the author and title fields when this object
      * is constructed.
+     * 
+     * Includes question 2.85
+     * 
      */
-    public Book(String bookAuthor, String bookTitle)
+    public Book(String bookAuthor, String bookTitle, int bookPages)
     {
         author = bookAuthor;
         title = bookTitle;
+        pages = bookPages;
     }
 
     // Add the methods here ...
+    
+    /*
+     * Question 2.84
+     * 
+     * printAuthor and printTitle methods
+     */
+    public void printAuthor()
+    {
+        System.out.println(author);
+    }
+    
+    public void printTitle()
+    {
+        System.out.println(title);
+    }
+    
+    /*
+     * Question 2.85 accessor method
+     */
+    public int getPages(){
+        return pages;
+    }
+    
+    /*
+     * Question 2.87
+     */
+    public void printDetails(){
+        System.out.println(
+            "Title: " + title + 
+            ", Author: " + author +
+            ", Pages: " + pages
+        );
+    }
+    
+    
 }
