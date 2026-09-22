@@ -14,6 +14,7 @@ class Book
     private int pages;
     
     private String refNumber;
+    private int borrowed;
 
     /**
      * Set the author and title fields when this object
@@ -89,7 +90,8 @@ class Book
                 "Title: " + title + 
                 ", Author: " + author +
                 ", Pages: " + pages +
-                ", Reference Number: ZZZ"
+                ", Reference Number: ZZZ" +
+                ", Times this book was borrowed: " + borrowed
             );
         }
         else
@@ -98,7 +100,8 @@ class Book
                 "Title: " + title + 
                 ", Author: " + author +
                 ", Pages: " + pages +
-                ", Reference Number: " + refNumber
+                ", Reference Number: " + refNumber +
+                ", Times this book was borrowed: " + borrowed
             );
         }
     }
@@ -129,5 +132,23 @@ class Book
         return refNumber;
     }
     
+    /*
+     * borrow mutator method
+     * 
+     */
+    public void borrow()
+    {
+        borrowed += 1;
+    }
+    
+    /*
+     * getBorrowed getter method
+     * 
+     * @return the number of times borrowed
+     */
+    public int getBorrowed()
+    {
+        return borrowed;
+    }
     
 }
