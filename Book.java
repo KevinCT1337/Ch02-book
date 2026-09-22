@@ -15,6 +15,7 @@ class Book
     
     private String refNumber;
     private int borrowed;
+    private final boolean courseText;
 
     /**
      * Set the author and title fields when this object
@@ -22,12 +23,13 @@ class Book
      * 
      * 
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages)
+    public Book(String bookAuthor, String bookTitle, int bookPages, boolean bookIsCourseText)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
         refNumber = "";
+        courseText = bookIsCourseText;
     }
 
     
@@ -149,6 +151,16 @@ class Book
     public int getBorrowed()
     {
         return borrowed;
+    }
+    
+    /*
+     * isCourseText accessor method
+     * 
+     * @return the state if the book is for a course
+     */
+    public boolean isCourseText()
+    {
+        return courseText;    
     }
     
 }
