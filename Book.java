@@ -12,15 +12,13 @@ class Book
     private String author;
     private String title;
     private int pages;
-    
     private String refNumber;
     private int borrowed;
     private final boolean courseText;
 
     /**
-     * Set the author and title fields when this object
+     * Set the author, title, pages, and courseText fields when this object
      * is constructed.
-     * 
      * 
      */
     public Book(String bookAuthor, String bookTitle, int bookPages, boolean bookIsCourseText)
@@ -34,7 +32,7 @@ class Book
 
     
     /*
-     * getAuthor getter method
+     * getAuthor getter method that gets the author
      * 
      * @return the name of the author
      */
@@ -44,7 +42,7 @@ class Book
     }
     
     /*
-     * getTitle getter method
+     * getTitle getter method that gets the title
      * 
      * @return the title of the book
      */
@@ -56,7 +54,7 @@ class Book
     /*
      * printAuthor method
      * 
-     * 
+     * Prints out to the terminal the author name
      */
     public void printAuthor()
     {
@@ -66,6 +64,8 @@ class Book
     /*
      * printTitle method
      * 
+     * Prints out to the terminal the title name
+     * 
      */
     public void printTitle()
     {
@@ -73,7 +73,7 @@ class Book
     }
     
     /*
-     * getPages getter method
+     * getPages getter method that gets the number of pages
      * 
      * @return the number of pages
      */
@@ -82,7 +82,7 @@ class Book
     }
     
     /*
-     * printDetails method
+     * printDetails method that prints out details about the book
      * 
      * Prints book details to the terminal as a formatted string
      */
@@ -112,7 +112,8 @@ class Book
     
     
     /*
-     * setRefNumber setter method
+     * setRefNumber setter method that sets a reference number, and
+     * error if it is too short
      * 
      */
     public void setRefNumber(String ref)
@@ -127,7 +128,7 @@ class Book
     }
     
     /*
-     * getRefNumber getter method
+     * getRefNumber getter method that returns the reference number
      * 
      * @return the reference number text
      */
@@ -137,7 +138,7 @@ class Book
     }
     
     /*
-     * borrow mutator method
+     * borrow mutator method that increments the borrowed field
      * 
      */
     public void borrow()
@@ -146,7 +147,7 @@ class Book
     }
     
     /*
-     * getBorrowed getter method
+     * getBorrowed getter method that returns the number of times borrowed
      * 
      * @return the number of times borrowed
      */
@@ -156,7 +157,8 @@ class Book
     }
     
     /*
-     * isCourseText accessor method
+     * isCourseText accessor method that returns the final state on whether
+     * the book is for a course or not
      * 
      * @return the state if the book is for a course
      */
