@@ -81,14 +81,26 @@ class Book
     /*
      * printDetails method
      * 
-     * Prints to the terminal a formatted string
+     * Prints book details to the terminal as a formatted string
      */
     public void printDetails(){
-        System.out.println(
-            "Title: " + title + 
-            ", Author: " + author +
-            ", Pages: " + pages
-        );
+        if (refNumber.length() == 0){
+            System.out.println(
+                "Title: " + title + 
+                ", Author: " + author +
+                ", Pages: " + pages +
+                ", Reference Number: ZZZ"
+            );
+        }
+        else
+        {
+            System.out.println(
+                "Title: " + title + 
+                ", Author: " + author +
+                ", Pages: " + pages +
+                ", Reference Number: " + refNumber
+            );
+        }
     }
     
     
