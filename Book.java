@@ -93,7 +93,8 @@ class Book
                 ", Author: " + author +
                 ", Pages: " + pages +
                 ", Reference Number: ZZZ" +
-                ", Times this book was borrowed: " + borrowed
+                ", Times this book was borrowed: " + borrowed + 
+                ", Is for a course?: " + courseText
             );
         }
         else
@@ -103,7 +104,8 @@ class Book
                 ", Author: " + author +
                 ", Pages: " + pages +
                 ", Reference Number: " + refNumber +
-                ", Times this book was borrowed: " + borrowed
+                ", Times this book was borrowed: " + borrowed + 
+                ", Is for a course?: " + courseText
             );
         }
     }
